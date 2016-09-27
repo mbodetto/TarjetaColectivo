@@ -12,7 +12,7 @@ class TarjetaTest extends TestCase {
     $this->assertEquals($tarjeta->saldo(), 320, "Cuando cargo 272 deberia tener finalmente 320");
   }
 
-  public function testCarga2 {
+  public function testCarga2() {
     $tarjeta = new Sube;
     $tarjeta->recargar(100);
     $this->assertEquals($tarjeta->saldo(), 100); 
