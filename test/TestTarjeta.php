@@ -2,9 +2,9 @@
 
 namespace Poli\Tarjeta;
 
-//use PHPUnit\Framework\TestCase;
+use PHPUnit\Framework\TestCase;
 
-class TarjetaTest extends /PHPUnit_Framework_TestCase {
+class TarjetaTest extends TestCase {
 
   public function testCarga1() {
     $tarjeta = new Sube;
