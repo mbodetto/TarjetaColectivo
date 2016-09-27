@@ -43,17 +43,14 @@ class Sube implements InterfaceTarjeta {
     $this->saldo -= $monto;
   }
 
-  public function recargar($monto) {
-    if ($monto == 272) {
-      $this->saldo += 320;
-    }
-    else if ($monto == 500) {
-      $this->saldo += 640;
-    }
-    else {
-      $this->saldo += $monto;
-    }
-  }
+  public function recargar($monto){
+		if($monto>=500){
+			$monto+=140;
+		} else if($monto>=272){
+			$monto+=48;
+		}
+		$this->saldo+=$monto;
+	}
 
   public function saldo() {
     return $this->saldo;
