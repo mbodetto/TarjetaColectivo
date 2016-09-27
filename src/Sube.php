@@ -47,7 +47,7 @@ class Sube implements InterfaceTarjeta {
     if ($monto == 272) {
       $this->saldo += 320;
     }
-    else if ($monto = 500) {
+    else if ($monto == 500) {
       $this->saldo += 640;
     }
     else {
