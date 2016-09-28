@@ -15,6 +15,6 @@ class TestTarjeta extends TestCase {
   public function testCarga2() {
     $tarjeta = new Sube;
     $tarjeta->recargar(100);
-    $this->assertEquals($tarjeta->saldo(), 120); 
+    $this->assertEquals($tarjeta->saldo(), 100); 
   }
 }
