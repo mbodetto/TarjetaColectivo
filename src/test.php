@@ -1,6 +1,6 @@
 <?php
 
-namespace Poli\Tarjeta;
+namespace Tarjeta;
 
 require __DIR__ . '/../vendor/autoload.php';
 
