@@ -1,6 +1,6 @@
 <?php
 
-namespace Poli\Tarjeta;
+namespace Tarjeta;
 
 class PaseLibre extends Sube {
   public function __construct() {
