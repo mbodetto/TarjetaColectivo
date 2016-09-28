@@ -1,6 +1,6 @@
 <?php
 
-namespace Poli\Tarjeta;
+namespace Tarjeta;
 
 use PHPUnit\Framework\TestCase;
 
@@ -17,22 +17,4 @@ class TestTarjeta extends TestCase {
     $tarjeta->recargar(100);
     $this->assertEquals($tarjeta->saldo(), 120); 
   }
-  
-
-  public function testPagarViaje() {
-
-  }
-
-  public function testPagarViajeSinSaldo() {
-
-  }
-
-  public function testTransbordo() {
-
-  }
-
-  public function testNoTransbordo() {
-
-  }
-
 }
