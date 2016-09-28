@@ -1,6 +1,6 @@
 <?php
 
-namespace Poli\Tarjeta;
+namespace Tarjeta;
 
 class Bici extends Transporte {
   private $patente;
