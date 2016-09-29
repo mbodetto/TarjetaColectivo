@@ -5,11 +5,11 @@ namespace Tarjeta;
 class Sube implements InterfaceTarjeta {
 
   private $viajes = [];
-
-  private $saldo = 0;
+  private $saldo;
   protected $descuento;
 
   public function __construct() {
+    $this->saldo = 0;
     $this->descuento = 1;
   }
 
