@@ -15,7 +15,8 @@ class Tarjeta implements InterfaceTarjeta{
 		$aux2 = strtotime($this->ultimafecha);
 		if($this->ultimafecha == 0 || ($aux1-$aux2>3600) || $this->viajes[$this->ultimafecha]->getTransporte()->getId() == $transporte->getid()){ 
 			$costo = $transporte->getCosto()*$this->porcentaje;
-		} else {
+		} 
+		else {
 			$costo = $transporte->getCostoTrans()*$this->porcentaje;
 		}
 		if($costo<=$this->saldo){
@@ -23,10 +24,11 @@ class Tarjeta implements InterfaceTarjeta{
 			$this->viajes[$fecha_y_hora] = new Viaje($fecha_y_hora,$transporte,$costo);
 			$this->ultimafecha = $fecha_y_hora;
 			return 1;
-		} else {
+		} 
+		else {
 			return 0;
 		}
-		} 
+	} 
 	if($transporte->getTipo()==2){ 
 		$aux1 = strtotime($fecha_y_hora);
 		$aux2 = strtotime($this->ultimabicipaga);
@@ -35,7 +37,8 @@ class Tarjeta implements InterfaceTarjeta{
 			$costo = $transporte->getCosto();
 			$this->saldo -= $costo;
 			$this->ultimabicipaga = $fecha_y_hora;
-		} else {
+		} 
+		else {
 			$costo = 0;
 		}
 		$this->viajes[$fecha_y_hora] = new Viaje($fecha_y_hora,$transporte,$costo);
@@ -45,7 +48,8 @@ class Tarjeta implements InterfaceTarjeta{
 	public function recargar($monto){
 		if($monto>=500){
 			$monto+=140;
-		} else if($monto>=272){
+		} 
+		else if($monto>=272){
 			$monto+=48;
 		}
 		$this->saldo+=$monto;
