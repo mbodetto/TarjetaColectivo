@@ -2,9 +2,7 @@
 
 namespace Tarjeta;
 
-use PHPUnit\Framework\TestCase;
-
-class TestTarjeta extends TestCase {
+class TarjetaTest extends \PHPUnit_Framework_TestCase {
   protected $tarjeta,$medio,$colectivo144,$colectivo35verde,$bici10;	
 
   public function setup(){
