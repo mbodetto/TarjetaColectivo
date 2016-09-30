@@ -2,7 +2,7 @@
 
 namespace Tarjeta;
 
-class TarjetaTest extends \PHPUnit_Framework_TestCase {
+class testTarjeta extends \PHPUnit_Framework_TestCase {
   protected $tarjeta,$medio,$colectivo1,$colectivo2,$bici10;	
 
   public function setup(){
