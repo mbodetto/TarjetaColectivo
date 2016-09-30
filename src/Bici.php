@@ -2,15 +2,10 @@
 
 namespace Tarjeta;
 
-class Bici extends Transporte {
-  private $patente;
-
-  public function __construct($patente) {
-    $this->tipo = "bici";
-    $this->patente = $patente;
-  }
-
-  public function Nombre() {
-    return $this->patente;
-  }
+class Bicicleta extends Transporte{
+	public function __construct($id){
+		$this->id=$id;
+		$this->costo=12;
+		$this->tipo=2;
+	}
 }
