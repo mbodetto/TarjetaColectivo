@@ -2,7 +2,7 @@
 
 namespace Tarjeta;
 
-interface Int_Tarjeta {
+interface InterfaceTarjeta {
   
  public function pagar(Transporte $transporte, $fecha_y_hora);
   
