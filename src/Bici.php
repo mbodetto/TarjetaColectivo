@@ -9,3 +9,5 @@ class Bicicleta extends Transporte{
 		$this->tipo=2;
 	}
 }
+
+?>
