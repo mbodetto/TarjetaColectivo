@@ -17,8 +17,8 @@ class TarjetaTest extends \PHPUnit_Framework_TestCase {
     $this->tarjeta->recargar(272);
     $this->assertEquals($this->tarjeta->saldo(), 320, "Cuando cargo 272 tendría que tener 320 pesos");
     $this->tarjeta = new Tarjeta();
-    $this->tarjeta->recargar(510);
-    $this->assertEquals($this->tarjeta->saldo(), 650, "Cuando cargo 510 tendría que tener 645 pesos");
+    $this->tarjeta->recargar(505);
+    $this->assertEquals($this->tarjeta->saldo(), 645, "Cuando cargo 505 tendría que tener 645 pesos");
   }
 }
 
