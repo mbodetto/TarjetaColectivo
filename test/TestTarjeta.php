@@ -4,6 +4,7 @@ namespace Tarjeta;
 
 use PHPUnit\Framework\TestCase;
 
+class TestTarjeta extends TestCase {
   protected $tarjeta,$medio,$colectivo144,$colectivo35verde,$bici10;	
 
   public function setup(){
@@ -21,3 +22,4 @@ use PHPUnit\Framework\TestCase;
     $this->tarjeta->recargar(510);
     $this->assertEquals($this->tarjeta->saldo(), 650, "Cuando cargo 510 tendría que tener 645 pesos");
   }
+}
