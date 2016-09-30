@@ -23,3 +23,5 @@ class Viaje {
 		return $this->tipos[$this->tipo];
 	}
 }
+
+?>
