@@ -17,3 +17,5 @@ abstract class Transporte {
 		return $this->costotrans;
 	}
 }
+
+?>
