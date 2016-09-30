@@ -3,7 +3,7 @@
 namespace Tarjeta;
 
 class Viaje {
-	protected $horario,$transporte,$costo,$tipo,$tipos = array(1 => "Viaje en Colectivo" , 2 => "Viaje en Bici");
+	protected $horario,$transporte,$costo,$tipo,$tipos = array(1 => "Viaje en Colectivo" , 2 => "Viaje en Bicicleta");
 	public function __construct($horario,Transporte $transporte,$costo){
 		$this->horario=$horario;
 		$this->transporte=$transporte;
