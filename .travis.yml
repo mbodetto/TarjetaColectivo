@@ -11,7 +11,7 @@ before_script:
   - php composer.phar install
 
 script:
-  - phpunit
+  - phpunit test/TestTarjeta.php
   
 notifications:
   email: false
