@@ -15,3 +15,4 @@ class Colectivo extends Transporte{
 		$this->empresa;
 	}
 }
+?>
