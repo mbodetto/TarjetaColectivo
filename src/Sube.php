@@ -2,7 +2,7 @@
 
 namespace Tarjeta;
 
-class Tarjeta implements InterfazTarjeta{
+class Tarjeta implements InterfaceTarjeta{
 	protected $saldo,$porcentaje;
 	protected $viajes,$ultimafecha=0,$ultimabicipaga=0;
 	public function __construct (){
