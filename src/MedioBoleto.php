@@ -9,3 +9,5 @@ class Medio extends Tarjeta{
 	}
 }
 
+?>
+
