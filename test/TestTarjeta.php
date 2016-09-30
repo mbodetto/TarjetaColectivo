@@ -8,11 +8,11 @@ class TestTarjeta extends TestCase {
   protected $tarjeta,$medio,$colectivo144,$colectivo35verde,$bici10;	
 
   public function setup(){
-			$this->tarjeta = new Tarjeta();
-      $this->medio = new Medio();
-			$this->colectivoA = new Colectivo("144 Rojo", "Rosario Bus");
-  		$this->colectivoB = new Colectivo("35 Verde", "Rosario Bus");
-      $this->bici10 = new Bicicleta("10");
+    $this->tarjeta = new Tarjeta();
+    $this->medio = new Medio();
+    $this->colectivoA = new Colectivo("144 Rojo", "Rosario Bus");
+    $this->colectivoB = new Colectivo("35 Verde", "Rosario Bus");
+    $this->bici10 = new Bicicleta("10");
   }	
 
   public function testCargandoTarjeta() {
@@ -23,3 +23,5 @@ class TestTarjeta extends TestCase {
     $this->assertEquals($this->tarjeta->saldo(), 650, "Cuando cargo 510 tendría que tener 645 pesos");
   }
 }
+
+?>
