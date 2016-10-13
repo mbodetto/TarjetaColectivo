@@ -14,10 +14,10 @@ class Tarjeta implements InterfaceTarjeta{
 		$aux1 = strtotime($fecha_y_hora);
 		$aux2 = strtotime($this->ultimafecha);
 		if($this->ultimafecha == 0 || ($aux1-$aux2>3600) || $this->viajes[$this->ultimafecha]->getTransporte()->getId() == $transporte->getid()){ 
-			$costo = $transporte->getCosto()*$this->porcentaje;
+			$costo = ($transporte->getCosto()*$this->porcentaje);
 		} 
 		else {
-			$costo = $transporte->getCostoTrans()*$this->porcentaje;
+			$costo = ($transporte->getCostoTrans()*$this->porcentaje);
 		}
 		if($costo<=$this->saldo){
 			$this->saldo -= $costo;
