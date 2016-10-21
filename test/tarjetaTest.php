@@ -23,7 +23,6 @@ class TarjetaTest extends \PHPUnit_Framework_TestCase {
 
 	public function testPagando(){
 		$this->tarjeta->recargar(40);
-  		$this->tarjeta->pagar($this->colectivoA, "2016/04/4 10:50");
 		$this->assertEquals($this->tarjeta->pagar($this->colectivoA, "2016/04/4 10:50")->getTipo(),"Normal", "Debe devolver boleto tipo Normal");
   		$this->assertEquals($this->tarjeta->saldo(), 32, "Cargue 40, menos lo que sale el colectivo 32");
 	}
