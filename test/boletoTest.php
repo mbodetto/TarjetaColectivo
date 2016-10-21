@@ -17,7 +17,7 @@ class BoletoTest extends \PHPUnit_Framework_TestCase {
     $this->assertEquals($aux->getCosto(),8, "Costo del boleto: 8");
     $this->assertEquals($aux->getLinea(),"153 Negro", "Linea: 153");
     $this->assertEquals($aux->getFecha(),"2016/07/4 6:50", "Fecha: 2016/07/4 6:50");
-    $this->assertEquals($aux->getId(),23, "La id de la tarjeta es 1");
+    $this->assertEquals($aux->getId(),1, "La id de la tarjeta es 1");
     $this->assertEquals($aux->getSaldo(),312, "Tiene 312 de saldo");
     $this->assertEquals($this->tarjeta->saldo(), 312, "Cuando recargo 272 y pago un colectivo debo tener 312");
   }
