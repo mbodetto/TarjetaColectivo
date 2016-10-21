@@ -32,21 +32,6 @@ class TarjetaTest extends \PHPUnit_Framework_TestCase {
 		$this->assertEquals($this->tarjeta->saldo(),-8, "Al no recargar el saldo es negativo, por el plus. Debe dar -8");
 	}
 		
-	public function testTransbordo() {
-  		$this->tarjeta->recargar(272);
-  		$this->tarjeta->pagar($this->colectivoA, "2016/04/30 14:10");
-  		$this->tarjeta->pagar($this->colectivoB, "2016/04/30 14:50");
-  		$this->assertEquals($this->tarjeta->saldo(), 309.36, "Si tengo 312 y pago un colectivo con transbordo tengo que tener 309.36");
-  	}
-	
-  	public function testNoTransbordo() {
-  		$this->tarjeta->recargar(272);
-  		$this->tarjeta->pagar($this->colectivoA, "2010/06/20 10:01");
-   		$this->tarjeta->pagar($this->colectivoB, "2016/04/30 22:22");
-  		$this->assertEquals($this->tarjeta->saldo(), 304, "Si tengo 312 y pago un colectivo sin transbordo tengo que tener 304");
- 
-  	}
-	
 	public function testPagarBici() {
     		$this->tarjeta->recargar(272);
     		$this->tarjeta->pagar($this->bici, "1997/02/22 20:40");
