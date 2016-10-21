@@ -3,12 +3,17 @@
 namespace Tarjeta;
 
 class Tarjeta implements InterfaceTarjeta{
-	protected $saldo,$porcentaje;
-	protected $viajes,$ultimafecha=0,$ultimabicipaga=0;
-	public function __construct (){
+	protected $saldo,$porcentaje, $ultimafecha=0,$ultimabicipaga=0,$pasajesPlus=0,$tiempomaxtransbordo=3600, $viajes,$trans=0,$id;
+	protected $lunes, $dias = array(0 => "Lunes" , 1 => "Martes" , 2 => "Miercoles", 3 => "Jueves", 4 => "Viernes", 5 => "Sabado", 6 => "Domingo");
+	
+	public function __construct ($id){
 		$this->saldo = 0;
 		$this->porcentaje = 1;
+		$this->lunes = strtotime("2016/01/04 00:00");
+		$this->id = $id;
 	}
+	
+	
 	public function pagar(Transporte $transporte, $fecha_y_hora){
 	if($transporte->getTipo()==1){ 
 		$aux1 = strtotime($fecha_y_hora);
