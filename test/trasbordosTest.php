@@ -7,7 +7,7 @@ class TransbordoTest extends \PHPUnit_Framework_TestCase {
   
   public function setup(){
 	$this->tarjeta = new Tarjeta(10);
-    	$this->medio = new Medio();
+    	$this->medio = new MedioBoleto();
 	$this->colectivoA = new Colectivo("666 Rojo", "Rosario Bus");
   	$this->colectivoB = new Colectivo("35 Verde", "Rosario Bus");
   }
