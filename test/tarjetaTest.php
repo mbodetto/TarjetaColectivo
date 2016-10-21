@@ -27,7 +27,12 @@ class TarjetaTest extends \PHPUnit_Framework_TestCase {
   		$this->assertEquals($this->tarjeta->saldo(), 32, "Cargue 40, menos lo que sale el colectivo 32");
 	}
 	
-	 public function testTransbordo() {
+	public function testPagarViajeSinSaldo(){
+		$this->assertEquals($this->tarjeta->pagar($this->colectivoA, "2060/01/1 20:50")->getTipo(),"Plus", "Debe devolver boleto tipo Plus");
+		$this->assertEquals($this->tarjeta->saldo(),-8, "Al no recargar el saldo es negativo, por el plus. Debe dar -8");
+	}
+		
+	public function testTransbordo() {
   		$this->tarjeta->recargar(272);
   		$this->tarjeta->pagar($this->colectivoA, "2016/04/30 14:10");
   		$this->tarjeta->pagar($this->colectivoB, "2016/04/30 14:50");
