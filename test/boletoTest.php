@@ -3,7 +3,7 @@
 namespace Tarjeta;
 
 class BoletoTest extends \PHPUnit_Framework_TestCase {
-  protected $tarjeta,$colectivoA,$colectivoB,$medio,$bici;	
+  protected $tarjeta,$colectivoA,$colectivoB,$medio;	
   public function setup(){
 			$this->tarjeta = new Tarjeta(1);
 		  $this->colectivoA = new Colectivo("153 Negro", "Rosario Bus");
