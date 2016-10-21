@@ -1,17 +1,15 @@
-
 <?php
+
 namespace Tarjeta;
 
 class TransbordoTest extends \PHPUnit_Framework_TestCase {
   protected $tarjeta,$colectivoA,$colectivoB,$medio,$bici;	
   
   public function setup(){
-	  $this->tarjeta = new Tarjeta(10);
-    $this->medio = new Medio();
-	  $this->colectivoA = new Colectivo("666 Rojo", "Rosario Bus");
+	$this->tarjeta = new Tarjeta(10);
+    	$this->medio = new Medio();
+	$this->colectivoA = new Colectivo("666 Rojo", "Rosario Bus");
   	$this->colectivoB = new Colectivo("35 Verde", "Rosario Bus");
-    $this->biciA = new Bicicleta("123");
-    $this->biciB = new Bicicleta("456");
   }
   
   // NORMAL
