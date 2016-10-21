@@ -3,7 +3,7 @@
 namespace Tarjeta;
 
 class TransbordoTest extends \PHPUnit_Framework_TestCase {
-  protected $tarjeta,$colectivoA,$colectivoB,$medio,$bici;	
+  protected $tarjeta,$colectivoA,$colectivoB,$medio;	
   
   public function setup(){
 	$this->tarjeta = new Tarjeta(10);
