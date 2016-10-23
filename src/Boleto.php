@@ -38,5 +38,4 @@ class Boleto{
 		return $this->tipos[$this->tipo];
 	}
 }
-
 ?>
