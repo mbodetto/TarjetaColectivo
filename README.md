@@ -6,3 +6,5 @@
 
 * Porcentaje cubierto: 
 [![Coverage Status](https://coveralls.io/repos/github/mbodetto/TarjetaColectivo/badge.svg?branch=master)](https://coveralls.io/github/mbodetto/TarjetaColectivo?branch=master)
+
+Actualización de programa (boleto, trasbordos, medio) ✔
